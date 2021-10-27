@@ -1,0 +1,107 @@
+\documentclass[11pt]{article}
+
+%%% These are some packages that are useful
+\usepackage{amsmath,amssymb, amscd,amsbsy, amsthm, enumerate}
+\usepackage[export]{adjustbox}
+\usepackage{lastpage}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[unicode]{hyperref}
+\usepackage{tikz, pgfplots, xcolor, fancyhdr}
+\usepackage{multicol}
+\usepackage{lipsum}
+
+%%% Page formatting
+%\setlength{\headsep}{30pt}
+\setlength{\textheight}{9in}
+\newcommand{\tab}{\hspace{1cm}}
+%\setlength{\parindent}{25pt}
+
+\title{Optimal Room Temperature For Shared Spaces}
+\author{Antonius Torode$^{1,2,3}$\\ \scriptsize{1. National Superconducting Cyclotron Laboratory, East Lansing, Michigan 48823, USA} \\ \scriptsize{2. Joint Institute for Nuclear Astrophysics, Michigan State University, East Lansing, Michigan 48823, USA} \\ \scriptsize{3. Physics \& Astronomy Department, Michigan State University, East Lansing, Michigan 48823, USA}}
+\date{}
+
+%%% Header and Footer Info
+\pagestyle{fancy}
+\fancyhead[L]{Potato Pages - Submission.}
+\fancyhead[C]{}
+\fancyhead[R]{\date{\today}}
+
+
+%\fancyhf{} % sets both header and footer to nothing
+%\renewcommand{\headrulewidth}{0pt}
+% your new footer definitions here
+
+\fancyfoot[L]{}
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage\ of \pageref{LastPage}}
+
+% Used to define spacing and format of References
+\let\OLDthebibliography\thebibliography
+\renewcommand\thebibliography[1]{
+	\OLDthebibliography{#1}
+	\setlength{\parskip}{0pt}
+	\setlength{\itemsep}{0pt plus 0.3ex}
+}
+
+%%% Document Starts now
+\begin{document}
+
+\maketitle
+\thispagestyle{fancy}
+
+\begin{abstract}
+	73$^\circ$F to 74$^\circ$F.
+\end{abstract}
+
+\begin{multicols}{2}
+	
+\begin{center}
+	I. Introduction
+\end{center}
+
+Consider a Potato. If the potato is kept in storage at too high or low temperatures, it will go bad. Similarly, humans will go bad if they have to work in significantly high or low temperatures.
+
+\begin{center}
+	II. Section header
+\end{center}
+
+Of course the preferred temperature depends on ones clothing. However, it can be suggested that typical summer and winter ranges for a thermostat temperature be from 73$^\circ$F to 78$^\circ$F and 68$^\circ$F to 74$^\circ$F respectively \cite{Burr}. That being said, if we assume that whether it is winter or summer is unknown \cite{glyph} we can suggest a typical temperature to be where these two ranges overlap, and thus 73$^\circ$F to 74$^\circ$F.
+\begin{center}
+	III. Conclusion
+\end{center}
+
+The thermostat should be set to a temperature ranging between 73$^\circ$F to 74$^\circ$F.
+
+
+\begin{thebibliography}{9}
+	{\footnotesize
+	\bibitem{Burr} Burroughs, H. E.; Hansen, Shirley (2011). Managing Indoor Air Quality. Fairmont Press. pp. 149151. Archived from the original on 20 September 2014. Retrieved 12 March 2018.
+	
+	\bibitem{glyph} Egyptian hieroglyphics from the pyramid of Nuru.
+	}
+\end{thebibliography}
+\end{multicols}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
